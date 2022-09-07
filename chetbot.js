@@ -4,7 +4,8 @@ const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
 });
-console.log('안녕하세요 종현 챗봇 입니다.')
+console.log(`안녕하세요 종현 챗봇 입니다.
+종료를 하려면 -1`)
  
 
 rl.on("line", (line) => {
