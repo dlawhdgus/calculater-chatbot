@@ -5,9 +5,10 @@ const rl = readline.createInterface({
     output: process.stdout,
 });
  
-console.log(`숫자를 입력하고 스페이스바를 눌러주세요
+console.log(`
+숫자를 입력하고 스페이스바를 눌러주세요
 ex) 1 + 1`);
-
+let input = 
 rl.on("line", (line) => {
     let input = line.split(' ');
     
