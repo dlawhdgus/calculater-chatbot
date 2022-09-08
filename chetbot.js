@@ -4,13 +4,18 @@ const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
 });
-console.log(`안녕하세요 종현 챗봇 입니다.
-종료를 하려면 -1`)
+console.log(`
+안녕하세요 종현 챗봇 입니다.
+도움말을 보고싶다면 0,
+종료를 하려면 -1 을 입력해 주세요
+`)
  
 
 rl.on("line", (line) => {
     let command = line;
-    if(command === '1') {
+    if(command === '0') {
+        console.log('1 ~ 10 까지 입력을 하면 10개의 나라의 인삿말이 나옵니다.')
+    } else if(command === '1') {
         console.log('안녕하세요');
     } else if(command === "2") {
         console.log('hello');
@@ -28,7 +33,7 @@ rl.on("line", (line) => {
         console.log('こんにちは');
     } else if(command === "9") {
         console.log('olá');
-    } else if(command === "9") {
+    } else if(command === "10") {
         console.log('Kamusta');
     } else if (command === "-1") {
         rl.close();
