@@ -5,15 +5,12 @@ const rl = readline.createInterface({
     output: process.stdout,
 });
  
-let input = []
 console.log(`숫자를 입력하고 스페이스바를 눌러주세요
 ex) 1 + 1`);
+
 rl.on("line", (line) => {
-    input = line.split(' ')
-    rl.close();
-});
- 
-rl.on('close', () => {
+    let input = line.split(' ');
+    
     for(let i =0; i<input.length-2; i++) {
         let first = parseInt(input[0]);
         let second = parseInt(input[2]);
@@ -34,4 +31,4 @@ rl.on('close', () => {
         }
     }
     process.exit();
-})
+});

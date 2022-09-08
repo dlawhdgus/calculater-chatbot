@@ -11,7 +11,7 @@ ex)
 1
 +
 1 
-종료는 ctrl+c`)
+결과를 보려면 ctrl+c`)
 rl.on("line", (line) => {
     input.push(line);
 });
