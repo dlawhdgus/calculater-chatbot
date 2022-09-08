@@ -7,8 +7,8 @@ const rl = readline.createInterface({
 
 console.log(`
 안녕하세요 종현 챗봇 입니다.
-도움말을 보고싶다면 0,
-종료를 하려면 -1 을 입력해 주세요
+도움말을 보고싶다면 -1,
+종료를 하려면 10 을 입력해 주세요
 `)
  
 
@@ -16,9 +16,9 @@ rl.on("line", (line) => {
     let command = line;
 
     switch (command) {
-        case '0' : 
-            console.log('1 ~ 10 까지 입력을 하면 10개의 나라의 인삿말이 나옵니다.');
-            
+        case '-1' : 
+            console.log('0 ~ 9 까지 입력을 하면 10개의 나라의 인삿말이 나옵니다.');
+            break;
         case '1' : 
             console.log('안녕하세요');
             break;
@@ -46,10 +46,10 @@ rl.on("line", (line) => {
         case '9' : 
             console.log('olá');
             break;
-        case '10' : 
+        case '0' : 
             console.log('Kamusta');
             break;
-        case '-1' : 
+        case '10' : 
             rl.close();
             break;
         default : 
