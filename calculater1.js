@@ -11,8 +11,8 @@ ex) 1 + 1`);
 rl.on("line", (line) => {
     let input = line.split(' ');
     
-    let first = parseInt(input[0]);
-    let second = parseInt(input[2]);
+    let first = parseFloat(input[0]);
+    let second = parseFloat(input[2]);
     if(input[1] === '+'){
         let plus = first + second;
         console.log(`result : ${plus}`);
