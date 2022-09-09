@@ -39,7 +39,7 @@ rl.on("line", (line) => {
     } else if (command === '10') {
         rl.close();
     } else {
-        console.log('숫자를 잘 못 일벽하셨습니다.')
+        console.log('숫자를 잘 못 입력하셨습니다.')
     }
 });
  

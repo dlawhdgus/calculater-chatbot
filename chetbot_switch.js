@@ -54,7 +54,7 @@ rl.on("line", (line) => {
             rl.close();
             break;
         default : 
-            console.log('숫자를 잘 못 일벽하셨습니다.');
+            console.log('숫자를 잘 못 입력하셨습니다.');
             break;
     }
 });
